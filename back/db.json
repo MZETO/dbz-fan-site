@@ -1,0 +1,46 @@
+{
+  "characters": [
+    {
+      "photo": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/hc_1440x810/public/media/image/2022/04/dragon-ball-super-son-goku-2689083.jpg?itok=zr-ugR6p",
+      "name": "Son Goku",
+      "origin": "Planeta Vegeta",
+      "power": 9000,
+      "id": 1
+    },
+    {
+      "photo": "https://i.blogs.es/263858/trunks-del-futuro-en-dragon-ball/840_560.jpg",
+      "name": "Trunks",
+      "origin": "Planeta Tierra",
+      "power": 7500,
+      "id": 2
+    },
+    {
+      "photo": "https://e.rpp-noticias.io/large/2021/08/04/051605_1127901.jpg",
+      "name": "Piccolo",
+      "origin": "Planeta Tierra",
+      "power": 4200,
+      "id": 3
+    },
+    {
+      "photo": "https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2022/05/Vivimos-enganados-Sabias-que-el-cabello-de-Vegeta-nunca-fue-negro-en-Dragon-Ball-Z.jpg?fit=1280%2C720&quality=80&ssl=1",
+      "name": "Vegeta",
+      "origin": "Planeta Vegeta",
+      "power": 8000,
+      "id": 4
+    },
+    {
+      "photo": "https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2022/05/dragon-ball-majin-buu-estilo-tradicional.jpg?fit=1280%2C720&quality=80&ssl=1",
+      "name": "Majin Buu",
+      "origin": "???",
+      "power": "25000",
+      "id": 5
+    },
+    {
+      "photo": "http://pm1.narvii.com/6567/37e017fa2614f0151e0e8354a2ade5fc5cfdb71e_00.jpg",
+      "name": "Freezer",
+      "origin": "Universo 7",
+      "power": "19000",
+      "id": 6
+    }
+  ]
+}

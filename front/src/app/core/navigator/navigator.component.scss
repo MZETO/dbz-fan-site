@@ -1,0 +1,27 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 50px 50px 50px 50px;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    cursor: pointer;
+  }
+
+  .outerLogo {
+    width: 50px;
+    justify-content: right;
+    cursor: pointer;
+    &:hover {
+      transition: transform .7s ease-in-out;
+    }
+  }
+
+  .logo {
+    width: 250px;
+  }
+}

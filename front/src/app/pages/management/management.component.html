@@ -1,0 +1,32 @@
+<section>
+
+  <img src="../../../assets/img/gestion.png" alt="gestion">
+
+  <form novalidate [formGroup]="characterForm" (ngSubmit)="onSubmit()">
+    <label for="photo">Imagen del personaje</label>
+    <input type="text" id="photo" formControlName="photo">
+
+    <label for="name">Nombre</label>
+    <input type="text" id="name" formControlName="name">
+
+    <label for="origin">Origen</label>
+    <input type="origin" id="origin" formControlName="origin">
+
+    <label for="power">Nivel de poder</label>
+    <input type="power" id="power" formControlName="power">
+
+    <button type="submit">ENVIAR</button>
+    <button type="button" *ngIf="characterID !== ''" (click)="delete()" >BORRAR</button>
+
+  </form>
+
+  <figure>
+
+    <img src="{{ newCharacter.photo }}" alt="{{ newCharacter.name }}">
+    <h3>{{ newCharacter.name }}</h3>
+    <p>{{ newCharacter.origin }}</p>
+    <p>{{ newCharacter.power }}</p>
+
+  </figure>
+
+</section>

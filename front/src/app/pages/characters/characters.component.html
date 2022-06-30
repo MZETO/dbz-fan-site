@@ -1,0 +1,16 @@
+<section>
+  <img src="../../../assets/img/personajes.png" alt="personajes">
+  <div>
+    <figure *ngFor="let character of characterList">
+      <img src="{{ character.photo }}" alt="character" />
+      <h3>NOMBRE</h3>
+      <p>{{ character.name }}</p>
+      <h3>ORIGEN</h3>
+      <p>{{ character.origin }}</p>
+      <h3>PODER</h3>
+      <p>{{ character.power }}</p>
+      <button (click)="catchCharacter(character)">EDITAR PERSONAJE</button>
+    </figure>
+  </div>
+</section>
+
