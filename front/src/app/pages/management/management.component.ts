@@ -63,6 +63,7 @@ export class ManagementComponent implements OnInit {
   }
 
   public delete() {
+
     Swal.fire({
       title: 'ESPERA!!!',
       text: 'Vas a eliminar el personaje para siempre...',
@@ -72,12 +73,18 @@ export class ManagementComponent implements OnInit {
       cancelButtonColor: '#d33',
       confirmButtonText: 'Si, ACÁBALO!!!',
       cancelButtonText: 'Mejor no...',
+
     }).then((result) => {
+
       if (result.isConfirmed) {
+
         this.characterService.deleteCharacter(this.characterID).subscribe();
         this.characterForm.reset();
+
         Swal.fire('BORRADO!!', 'Tu personaje ha sido ELIMINADO', 'success');
+
         this.router.navigate(['/personajes']);
+
       }
     });
   }
