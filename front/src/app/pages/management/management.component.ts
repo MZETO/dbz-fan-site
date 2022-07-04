@@ -26,6 +26,7 @@ export class ManagementComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
+
     this.characterService.clearCharacter();
 
     this.characterForm = this.formBuilder.group({
@@ -38,9 +39,11 @@ export class ManagementComponent implements OnInit {
     this.characterForm.valueChanges.subscribe((changes) => {
       this.newCharacter = changes;
     });
+
   }
 
   public onSubmit() {
+
     if (this.characterID !== '') {
 
       this.characterService
@@ -60,11 +63,13 @@ export class ManagementComponent implements OnInit {
     this.characterForm.reset();
 
     this.router.navigate(['/personajes']);
+
   }
 
   public delete() {
 
     Swal.fire({
+
       title: 'ESPERA!!!',
       text: 'Vas a eliminar el personaje para siempre...',
       icon: 'warning',

@@ -35,22 +35,22 @@ export class CharactersService {
 
     //función para traer los personajes
     public getCharacters() {
-      return this.httpClient.get("http://localhost:3000/characters");
+      return this.httpClient.get("http://localhost:3000/characters/");
     }
 
     //función para postear un nuevo personaje
     public postCharacter(newCharacter: any) {
-      return this.httpClient.post("http://localhost:3000/characters", newCharacter);
+      return this.httpClient.post("http://localhost:3000/characters/", newCharacter);
     }
 
     //función para borrar un personaje existente
     public deleteCharacter(characterID: any) {
-      return this.httpClient.delete("http://localhost:3000/characters" + characterID);
+      return this.httpClient.delete("http://localhost:3000/characters/" + characterID);
     }
 
     //función para editar un personaje existente
     public editCharacter(characterID: any, editedCharacter: any)  {
-      return this.httpClient.put("http://localhost:3000/characters" + characterID, editedCharacter);
+      return this.httpClient.put("http://localhost:3000/characters/" + characterID, editedCharacter);
     }
 
 
